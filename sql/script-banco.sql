@@ -1,4 +1,15 @@
 
+DROP SEQUENCE sq_id_usuario;
+
+DROP TABLE config_alimentacao;
+DROP TABLE config_exercicio;
+DROP TABLE exercicios;
+DROP TABLE nivel_estresse;
+DROP TABLE receitas;
+DROP TABLE usuario;
+
+CREATE SEQUENCE sq_id_usuario START WITH 1 INCREMENT BY 1;
+
 CREATE TABLE config_alimentacao (
     calorias_diarias       NUMBER(4) NOT NULL,
     qtd_refeicoes          NUMBER(1) NOT NULL,
